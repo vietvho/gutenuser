@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenuser/social-link",
+	"title": "Social Xing",
+	"category": "widgets",
+	"parent": [ "core/social-links" ],
+	"description": "Display an icon linking to a social media profile or site.",
+	"textdomain": "gutenuser",
+	"attributes": {
+		"url": {
+			"type": "string"
+		},
+		"label": {
+			"type": "string"
+		}
+	},
+	"usesContext": [
+		"openInNewTab",
+		"showLabels",
+		"iconColorValue",
+		"iconBackgroundColorValue"
+	],
+	"supports": {
+		"reusable": false,
+		"html": false
+	},
+	"editorScript": "file:../../index.js",
+	"editorStyle": "file:../../index.css",
+	"style": "file:../../style-index.css"
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenuser/getuser",
+	"version": "0.1.0",
+	"title": "Gutenuser",
+	"category": "text",
+	"icon": "admin-users",
+	"description": "A Gutenberg block to show your pride! This block enables you to type text and style it with the color font Gilbert from Type with Pride.",
+	"attributes": {
+		"userDetails": {
+			"type": "string",
+			"default": ""
+		},
+		"curUser": {
+			"type": "string",
+			"default": "user-0"
+		}
+	},
+	"supports": {
+		"html": true
+	},
+	"textdomain": "gutenuser",
+	"editorScript": "file:../../index.js",
+	"editorStyle": "file:../../index.css",
+	"style": "file:../../style-index.css"
+}

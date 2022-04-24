@@ -1,0 +1,9 @@
+.wp-social-link{
+	&-xing {
+		.wp-block-social-links:not(.is-style-logos-only) & {
+			background: #275f63;
+			color: #fff;
+			list-style: none;
+		}
+	}
+}

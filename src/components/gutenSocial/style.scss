@@ -1,0 +1,22 @@
+.wp-social-link{
+	&-xing {
+		background: #275f63;
+		color: #fff;
+	}
+
+	&-xing &-anchor {
+		color: currentColor;
+		width: 36px;
+		height: 36px;
+		display: block;
+		border-radius: 50%;
+		text-align: center;
+		border-radius: 50%;
+		overflow: hidden;
+		line-height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+}

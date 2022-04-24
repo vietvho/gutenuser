@@ -1,0 +1,45 @@
+/**
+ * Registers a new block provided a unique name and an object defining its behavior.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ */
+ import { registerBlockType } from '@wordpress/blocks';
+
+ /**
+  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+  * All files containing `style` keyword are bundled together. The code used
+  * gets applied both to the front of your site and to the editor. All other files
+  * get applied to the editor only.
+  *
+  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+  */
+  import './style.scss';
+  import './editor.scss';
+
+ /**
+  * Internal dependencies
+  */
+ import SocialLinkEdit from './edit';
+ import socialLinkSave from './save';
+ 
+ /**
+  * Every block starts by registering a new block type definition.
+  *
+  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+  */
+export default function registerBlockGutenSocial(){
+  registerBlockType( 'gutenuser/social-link', {
+    /**
+     * Used to construct a preview for the block to be shown in the block inserter.
+     */
+    
+    /**
+     * @see ./edit.js
+     */
+    edit: SocialLinkEdit,
+    /**
+     * @see ./save.js
+     */
+    save: socialLinkSave,
+  } );
+}
